@@ -13,7 +13,7 @@ import cucumber.api.junit.Cucumber;
 							monochrome=true,
 							dryRun=false,
 							strict=false,
-							tags="@smoke")
+							tags="@smoke @regression")
 
 public class TestRunnerClass {
 	
