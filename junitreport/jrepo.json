@@ -1,0 +1,976 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "To login with invalid username and password",
+        "description": "",
+        "id": "to-validate-the-login-functionality-of-bluelynx;to-login-with-invalid-username-and-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 74310236800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "To launch the chrome browser",
+            "match": {
+              "location": "BluelynxNegativeLoginCheck.to_launch_the_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28564981000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "To launch the url to launch the application",
+            "match": {
+              "location": "BluelynxNegativeLoginCheck.to_launch_the_url_to_launch_the_application()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1495081600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "To mouseover action to my account button",
+            "match": {
+              "location": "BluelynxNegativeLoginCheck.to_mouseover_action_to_my_account_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7168986900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "To click the myaccount button",
+            "match": {
+              "location": "BluelynxNegativeLoginCheck.to_click_the_myaccount_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 853343700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "To pass the invalid username in username textbox",
+            "match": {
+              "location": "BluelynxNegativeLoginCheck.to_pass_the_invalid_username_in_username_textbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 437940700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "To pass the invalid password in password textbox",
+            "match": {
+              "location": "BluelynxNegativeLoginCheck.to_pass_the_invalid_password_in_password_textbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2077442800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "To click the signin button",
+            "match": {
+              "location": "BluelynxNegativeLoginCheck.to_click_the_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4821999100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "To close the browser",
+            "match": {
+              "location": "BluelynxNegativeLoginCheck.to_close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "To pass bulk of datas",
+        "description": "",
+        "id": "to-validate-the-login-functionality-of-bluelynx;to-pass-bulk-of-datas;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 27652287400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "launch the chrome browser",
+            "match": {
+              "location": "BluelynxScenarioOutline.launch_the_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 21506491200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "To launch the url",
+            "match": {
+              "location": "BluelynxScenarioOutline.to_launch_the_url()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 266638700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "To mouseover action  my account button",
+            "match": {
+              "location": "BluelynxScenarioOutline.to_mouseover_action_my_account_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2768338600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "To click  myaccount button",
+            "match": {
+              "location": "BluelynxScenarioOutline.to_click_myaccount_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 271199600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "To pass the invalid username \"jai22@yahoo.com\" username textbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"jai22@yahoo.com\"",
+                  "offset": 29
+                }
+              ],
+              "location": "BluelynxScenarioOutline.to_pass_the_invalid_username_username_textbox(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 190589100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "To pass the invalid password \"sql@123\" password textbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sql@123\"",
+                  "offset": 29
+                }
+              ],
+              "location": "BluelynxScenarioOutline.to_pass_the_invalid_password_password_textbox(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4864112500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "To click  signin button",
+            "match": {
+              "location": "BluelynxScenarioOutline.to_click_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17831433200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "close the browser",
+            "match": {
+              "location": "BluelynxScenarioOutline.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@multiplelogin"
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "To pass bulk of datas",
+        "description": "",
+        "id": "to-validate-the-login-functionality-of-bluelynx;to-pass-bulk-of-datas;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12599197000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "launch the chrome browser",
+            "match": {
+              "location": "BluelynxScenarioOutline.launch_the_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 21082036200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "To launch the url",
+            "match": {
+              "location": "BluelynxScenarioOutline.to_launch_the_url()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 167591100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "To mouseover action  my account button",
+            "match": {
+              "location": "BluelynxScenarioOutline.to_mouseover_action_my_account_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3070898500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "To click  myaccount button",
+            "match": {
+              "location": "BluelynxScenarioOutline.to_click_myaccount_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 156387900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "To pass the invalid username \"raja@hotmail.com\" username textbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"raja@hotmail.com\"",
+                  "offset": 29
+                }
+              ],
+              "location": "BluelynxScenarioOutline.to_pass_the_invalid_username_username_textbox(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 195938000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "To pass the invalid password \"res@234\" password textbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"res@234\"",
+                  "offset": 29
+                }
+              ],
+              "location": "BluelynxScenarioOutline.to_pass_the_invalid_password_password_textbox(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1801072400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "To click  signin button",
+            "match": {
+              "location": "BluelynxScenarioOutline.to_click_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4363704400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "close the browser",
+            "match": {
+              "location": "BluelynxScenarioOutline.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@multiplelogin"
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "To pass bulk of datas",
+        "description": "",
+        "id": "to-validate-the-login-functionality-of-bluelynx;to-pass-bulk-of-datas;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3953277900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "launch the chrome browser",
+            "match": {
+              "location": "BluelynxScenarioOutline.launch_the_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20355984500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "To launch the url",
+            "match": {
+              "location": "BluelynxScenarioOutline.to_launch_the_url()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 166067500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "To mouseover action  my account button",
+            "match": {
+              "location": "BluelynxScenarioOutline.to_mouseover_action_my_account_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23167755900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "To click  myaccount button",
+            "match": {
+              "location": "BluelynxScenarioOutline.to_click_myaccount_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6861957600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "To pass the invalid username \"jpr@gmail.com\" username textbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"jpr@gmail.com\"",
+                  "offset": 29
+                }
+              ],
+              "location": "BluelynxScenarioOutline.to_pass_the_invalid_username_username_textbox(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 800286300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "To pass the invalid password \"foodie@1234\" password textbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"foodie@1234\"",
+                  "offset": 29
+                }
+              ],
+              "location": "BluelynxScenarioOutline.to_pass_the_invalid_password_password_textbox(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3283282500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "To click  signin button",
+            "match": {
+              "location": "BluelynxScenarioOutline.to_click_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14547935000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "close the browser",
+            "match": {
+              "location": "BluelynxScenarioOutline.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@multiplelogin"
+          }
+        ]
+      }
+    ],
+    "name": "To validate the login functionality of BlueLynx",
+    "description": "",
+    "id": "to-validate-the-login-functionality-of-bluelynx",
+    "keyword": "Feature",
+    "uri": "src/test/resources/1BlueLynxLogin.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "To add a xioami band product to cart",
+        "description": "",
+        "id": "to-check-the-add-to-cart-functionality;to-add-a-xioami-band-product-to-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12583887800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "To launch the browser",
+            "match": {
+              "location": "BlueLynxAddToCart.to_launch_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 40528714000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "To launch url",
+            "match": {
+              "location": "BlueLynxAddToCart.to_launch_url()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3971100900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "click category button twice to check the functionality",
+            "match": {
+              "location": "BlueLynxAddToCart.click_category_button_twice_to_check_the_functionality()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 212600800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "mouseover to smartphone and smartwatch tab",
+            "match": {
+              "location": "BlueLynxAddToCart.mouseover_to_smartphone_and_smartwatch_tab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7264586700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "mouseover to smartwatch tab and click it",
+            "match": {
+              "location": "BlueLynxAddToCart.mouseover_to_smartwatch_tab_and_click_it()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4853675000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "click the first xiaomi product",
+            "match": {
+              "location": "BlueLynxAddToCart.click_the_first_xiaomi_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87626200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click Addtocart",
+            "match": {
+              "location": "BlueLynxAddToCart.click_Addtocart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@addingtocart"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "To add  xioami band product to cart",
+        "description": "",
+        "id": "to-check-the-add-to-cart-functionality;to-add--xioami-band-product-to-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6199682500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "launch the browser",
+            "match": {
+              "location": "Bluelynxhomepageimagesclick.launch_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 32610518300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "launch url",
+            "match": {
+              "location": "BlueLynxaddtocart2.launch_url()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 207473100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "click category button twice  check the functionality",
+            "match": {
+              "location": "BlueLynxaddtocart2.click_category_button_twice_check_the_functionality()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 191717800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "mouseover  smartphone and smartwatch tab",
+            "match": {
+              "location": "BlueLynxaddtocart2.mouseover_smartphone_and_smartwatch_tab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6020035400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "mouseover  smartwatch tab and click it",
+            "match": {
+              "location": "BlueLynxaddtocart2.mouseover_smartwatch_tab_and_click_it()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5595462700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "click  first xiaomi product",
+            "match": {
+              "location": "BlueLynxaddtocart2.click_first_xiaomi_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 171558500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Addtocart",
+            "match": {
+              "location": "BlueLynxaddtocart2.addtocart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36437300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "close the cart",
+            "match": {
+              "location": "BlueLynxaddtocart2.close_the_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55743100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "add to the cart",
+            "match": {
+              "location": "BlueLynxaddtocart2.add_to_the_cart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@addingtocart1"
+          }
+        ]
+      }
+    ],
+    "name": "To check the Add To Cart Functionality",
+    "description": "",
+    "id": "to-check-the-add-to-cart-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/2Bluelynxaddtocart.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "To check whether the images taking to the respective page or not",
+        "description": "",
+        "id": "to-check-the-images-in-home-page-and-click;to-check-whether-the-images-taking-to-the-respective-page-or-not",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15395606300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "launch the browser",
+            "match": {
+              "location": "Bluelynxhomepageimagesclick.launch_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 22447469800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "launc the url",
+            "match": {
+              "location": "Bluelynxhomepageimagesclick.launc_the_url()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 133774600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "click the first image",
+            "match": {
+              "location": "Bluelynxhomepageimagesclick.click_the_first_image()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1306615000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Take the screenshot of firstimage clicked page",
+            "match": {
+              "location": "Bluelynxhomepageimagesclick.take_the_screenshot_of_firstimage_clicked_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 427667200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "click the second image",
+            "match": {
+              "location": "Bluelynxhomepageimagesclick.click_the_second_image()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1028004700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Take the screenshot of secondimage clicked page",
+            "match": {
+              "location": "Bluelynxhomepageimagesclick.take_the_screenshot_of_secondimage_clicked_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 99803700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "click the third image",
+            "match": {
+              "location": "Bluelynxhomepageimagesclick.click_the_third_image()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 756083100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Take the screenshot of thirdimage clicked page",
+            "match": {
+              "location": "Bluelynxhomepageimagesclick.take_the_screenshot_of_thirdimage_clicked_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4240480800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "click the fourth image",
+            "match": {
+              "location": "Bluelynxhomepageimagesclick.click_the_fourth_image()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1253525100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Take the screenshot of fourthimage clicked page",
+            "match": {
+              "location": "Bluelynxhomepageimagesclick.take_the_screenshot_of_fourthimage_clicked_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3264985000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "click the fifth image",
+            "match": {
+              "location": "Bluelynxhomepageimagesclick.click_the_fifth_image()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 285341200,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Take the screenshot of fifthimage clicked page",
+            "match": {
+              "location": "Bluelynxhomepageimagesclick.take_the_screenshot_of_fifthimage_clicked_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@imagesclickhomepage"
+          }
+        ]
+      }
+    ],
+    "name": "To check the images in home Page and click",
+    "description": "",
+    "id": "to-check-the-images-in-home-page-and-click",
+    "keyword": "Feature",
+    "uri": "src/test/resources/3BlueLynxhomepageimagesclick.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "To check the function of searchbox",
+        "description": "",
+        "id": "to-validate-the-functionality-of-search-box;to-check-the-function-of-searchbox",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 39471520300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "launch google chrome and url",
+            "match": {
+              "location": "BlueLynxSearchProduct.launch_google_chrome_and_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1818658200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "In the search box search the products",
+            "match": {
+              "location": "BlueLynxSearchProduct.in_the_search_box_search_the_products(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "samsung",
+                  "apple",
+                  "oneplus"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5645731300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "click the search button",
+            "match": {
+              "location": "BlueLynxSearchProduct.click_the_search_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "To validate the functionality of search box",
+    "description": "",
+    "id": "to-validate-the-functionality-of-search-box",
+    "keyword": "Feature",
+    "uri": "src/test/resources/4Searchboc.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

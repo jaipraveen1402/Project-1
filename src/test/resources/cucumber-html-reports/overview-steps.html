@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>BlueLynx Report</td>
+            <td>05 Dec 2022, 14:54</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">BlueLynxAddToCart.click_Addtocart()</td>
+              <td>1</td>
+              <td class="duration" data-value="87626200">0.087</td>
+              <td class="duration" data-value="87626200">0.087</td>
+              <td class="duration" data-value="87626200">0.087</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BlueLynxAddToCart.click_category_button_twice_to_check_the_functionality()</td>
+              <td>1</td>
+              <td class="duration" data-value="3971100900">3.971</td>
+              <td class="duration" data-value="3971100900">3.971</td>
+              <td class="duration" data-value="3971100900">3.971</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BlueLynxAddToCart.click_the_first_xiaomi_product()</td>
+              <td>1</td>
+              <td class="duration" data-value="4853675000">4.853</td>
+              <td class="duration" data-value="4853675000">4.853</td>
+              <td class="duration" data-value="4853675000">4.853</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BlueLynxAddToCart.mouseover_to_smartphone_and_smartwatch_tab()</td>
+              <td>1</td>
+              <td class="duration" data-value="212600800">0.212</td>
+              <td class="duration" data-value="212600800">0.212</td>
+              <td class="duration" data-value="212600800">0.212</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BlueLynxAddToCart.mouseover_to_smartwatch_tab_and_click_it()</td>
+              <td>1</td>
+              <td class="duration" data-value="7264586700">7.264</td>
+              <td class="duration" data-value="7264586700">7.264</td>
+              <td class="duration" data-value="7264586700">7.264</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BlueLynxAddToCart.to_launch_the_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="12583887800">12.583</td>
+              <td class="duration" data-value="12583887800">12.583</td>
+              <td class="duration" data-value="12583887800">12.583</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BlueLynxAddToCart.to_launch_url()</td>
+              <td>1</td>
+              <td class="duration" data-value="40528714000">40.528</td>
+              <td class="duration" data-value="40528714000">40.528</td>
+              <td class="duration" data-value="40528714000">40.528</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BlueLynxSearchProduct.click_the_search_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="5645731300">5.645</td>
+              <td class="duration" data-value="5645731300">5.645</td>
+              <td class="duration" data-value="5645731300">5.645</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BlueLynxSearchProduct.in_the_search_box_search_the_products(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="1818658200">1.818</td>
+              <td class="duration" data-value="1818658200">1.818</td>
+              <td class="duration" data-value="1818658200">1.818</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BlueLynxSearchProduct.launch_google_chrome_and_url()</td>
+              <td>1</td>
+              <td class="duration" data-value="39471520300">39.471</td>
+              <td class="duration" data-value="39471520300">39.471</td>
+              <td class="duration" data-value="39471520300">39.471</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BlueLynxaddtocart2.add_to_the_cart()</td>
+              <td>1</td>
+              <td class="duration" data-value="55743100">0.055</td>
+              <td class="duration" data-value="55743100">0.055</td>
+              <td class="duration" data-value="55743100">0.055</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BlueLynxaddtocart2.addtocart()</td>
+              <td>1</td>
+              <td class="duration" data-value="171558500">0.171</td>
+              <td class="duration" data-value="171558500">0.171</td>
+              <td class="duration" data-value="171558500">0.171</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BlueLynxaddtocart2.click_category_button_twice_check_the_functionality()</td>
+              <td>1</td>
+              <td class="duration" data-value="207473100">0.207</td>
+              <td class="duration" data-value="207473100">0.207</td>
+              <td class="duration" data-value="207473100">0.207</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BlueLynxaddtocart2.click_first_xiaomi_product()</td>
+              <td>1</td>
+              <td class="duration" data-value="5595462700">5.595</td>
+              <td class="duration" data-value="5595462700">5.595</td>
+              <td class="duration" data-value="5595462700">5.595</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BlueLynxaddtocart2.close_the_cart()</td>
+              <td>1</td>
+              <td class="duration" data-value="36437300">0.036</td>
+              <td class="duration" data-value="36437300">0.036</td>
+              <td class="duration" data-value="36437300">0.036</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BlueLynxaddtocart2.launch_url()</td>
+              <td>1</td>
+              <td class="duration" data-value="32610518300">32.610</td>
+              <td class="duration" data-value="32610518300">32.610</td>
+              <td class="duration" data-value="32610518300">32.610</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BlueLynxaddtocart2.mouseover_smartphone_and_smartwatch_tab()</td>
+              <td>1</td>
+              <td class="duration" data-value="191717800">0.191</td>
+              <td class="duration" data-value="191717800">0.191</td>
+              <td class="duration" data-value="191717800">0.191</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BlueLynxaddtocart2.mouseover_smartwatch_tab_and_click_it()</td>
+              <td>1</td>
+              <td class="duration" data-value="6020035400">6.020</td>
+              <td class="duration" data-value="6020035400">6.020</td>
+              <td class="duration" data-value="6020035400">6.020</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BluelynxNegativeLoginCheck.to_click_the_myaccount_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="7168986900">7.168</td>
+              <td class="duration" data-value="7168986900">7.168</td>
+              <td class="duration" data-value="7168986900">7.168</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BluelynxNegativeLoginCheck.to_click_the_signin_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="2077442800">2.077</td>
+              <td class="duration" data-value="2077442800">2.077</td>
+              <td class="duration" data-value="2077442800">2.077</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BluelynxNegativeLoginCheck.to_close_the_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="4821999100">4.821</td>
+              <td class="duration" data-value="4821999100">4.821</td>
+              <td class="duration" data-value="4821999100">4.821</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BluelynxNegativeLoginCheck.to_launch_the_chrome_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="74310236800">1:14.310</td>
+              <td class="duration" data-value="74310236800">1:14.310</td>
+              <td class="duration" data-value="74310236800">1:14.310</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BluelynxNegativeLoginCheck.to_launch_the_url_to_launch_the_application()</td>
+              <td>1</td>
+              <td class="duration" data-value="28564981000">28.564</td>
+              <td class="duration" data-value="28564981000">28.564</td>
+              <td class="duration" data-value="28564981000">28.564</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BluelynxNegativeLoginCheck.to_mouseover_action_to_my_account_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="1495081600">1.495</td>
+              <td class="duration" data-value="1495081600">1.495</td>
+              <td class="duration" data-value="1495081600">1.495</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BluelynxNegativeLoginCheck.to_pass_the_invalid_password_in_password_textbox()</td>
+              <td>1</td>
+              <td class="duration" data-value="437940700">0.437</td>
+              <td class="duration" data-value="437940700">0.437</td>
+              <td class="duration" data-value="437940700">0.437</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BluelynxNegativeLoginCheck.to_pass_the_invalid_username_in_username_textbox()</td>
+              <td>1</td>
+              <td class="duration" data-value="853343700">0.853</td>
+              <td class="duration" data-value="853343700">0.853</td>
+              <td class="duration" data-value="853343700">0.853</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BluelynxScenarioOutline.close_the_browser()</td>
+              <td>3</td>
+              <td class="duration" data-value="12247690866">12.247</td>
+              <td class="duration" data-value="12247690866">17.831</td>
+              <td class="duration" data-value="36743072600">36.743</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BluelynxScenarioOutline.launch_the_chrome_browser()</td>
+              <td>3</td>
+              <td class="duration" data-value="14734920766">14.734</td>
+              <td class="duration" data-value="14734920766">27.652</td>
+              <td class="duration" data-value="44204762300">44.204</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BluelynxScenarioOutline.to_click_myaccount_button()</td>
+              <td>3</td>
+              <td class="duration" data-value="9668997666">9.668</td>
+              <td class="duration" data-value="9668997666">23.167</td>
+              <td class="duration" data-value="29006993000">29.006</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BluelynxScenarioOutline.to_click_signin_button()</td>
+              <td>3</td>
+              <td class="duration" data-value="3316155800">3.316</td>
+              <td class="duration" data-value="3316155800">4.864</td>
+              <td class="duration" data-value="9948467400">9.948</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BluelynxScenarioOutline.to_launch_the_url()</td>
+              <td>3</td>
+              <td class="duration" data-value="20981503966">20.981</td>
+              <td class="duration" data-value="20981503966">21.506</td>
+              <td class="duration" data-value="62944511900">1:2.944</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BluelynxScenarioOutline.to_mouseover_action_my_account_button()</td>
+              <td>3</td>
+              <td class="duration" data-value="200099100">0.200</td>
+              <td class="duration" data-value="200099100">0.266</td>
+              <td class="duration" data-value="600297300">0.600</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BluelynxScenarioOutline.to_pass_the_invalid_password_password_textbox(String)</td>
+              <td>3</td>
+              <td class="duration" data-value="395604466">0.395</td>
+              <td class="duration" data-value="395604466">0.800</td>
+              <td class="duration" data-value="1186813400">1.186</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BluelynxScenarioOutline.to_pass_the_invalid_username_username_textbox(String)</td>
+              <td>3</td>
+              <td class="duration" data-value="2429848366">2.429</td>
+              <td class="duration" data-value="2429848366">6.861</td>
+              <td class="duration" data-value="7289545100">7.289</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Bluelynxhomepageimagesclick.click_the_fifth_image()</td>
+              <td>1</td>
+              <td class="duration" data-value="3264985000">3.264</td>
+              <td class="duration" data-value="3264985000">3.264</td>
+              <td class="duration" data-value="3264985000">3.264</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Bluelynxhomepageimagesclick.click_the_first_image()</td>
+              <td>1</td>
+              <td class="duration" data-value="133774600">0.133</td>
+              <td class="duration" data-value="133774600">0.133</td>
+              <td class="duration" data-value="133774600">0.133</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Bluelynxhomepageimagesclick.click_the_fourth_image()</td>
+              <td>1</td>
+              <td class="duration" data-value="4240480800">4.240</td>
+              <td class="duration" data-value="4240480800">4.240</td>
+              <td class="duration" data-value="4240480800">4.240</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Bluelynxhomepageimagesclick.click_the_second_image()</td>
+              <td>1</td>
+              <td class="duration" data-value="427667200">0.427</td>
+              <td class="duration" data-value="427667200">0.427</td>
+              <td class="duration" data-value="427667200">0.427</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Bluelynxhomepageimagesclick.click_the_third_image()</td>
+              <td>1</td>
+              <td class="duration" data-value="99803700">0.099</td>
+              <td class="duration" data-value="99803700">0.099</td>
+              <td class="duration" data-value="99803700">0.099</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Bluelynxhomepageimagesclick.launc_the_url()</td>
+              <td>1</td>
+              <td class="duration" data-value="22447469800">22.447</td>
+              <td class="duration" data-value="22447469800">22.447</td>
+              <td class="duration" data-value="22447469800">22.447</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Bluelynxhomepageimagesclick.launch_the_browser()</td>
+              <td>2</td>
+              <td class="duration" data-value="10797644400">10.797</td>
+              <td class="duration" data-value="10797644400">15.395</td>
+              <td class="duration" data-value="21595288800">21.595</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Bluelynxhomepageimagesclick.take_the_screenshot_of_fifthimage_clicked_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="285341200">0.285</td>
+              <td class="duration" data-value="285341200">0.285</td>
+              <td class="duration" data-value="285341200">0.285</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Bluelynxhomepageimagesclick.take_the_screenshot_of_firstimage_clicked_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="1306615000">1.306</td>
+              <td class="duration" data-value="1306615000">1.306</td>
+              <td class="duration" data-value="1306615000">1.306</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Bluelynxhomepageimagesclick.take_the_screenshot_of_fourthimage_clicked_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="1253525100">1.253</td>
+              <td class="duration" data-value="1253525100">1.253</td>
+              <td class="duration" data-value="1253525100">1.253</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Bluelynxhomepageimagesclick.take_the_screenshot_of_secondimage_clicked_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="1028004700">1.028</td>
+              <td class="duration" data-value="1028004700">1.028</td>
+              <td class="duration" data-value="1028004700">1.028</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Bluelynxhomepageimagesclick.take_the_screenshot_of_thirdimage_clicked_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="756083100">0.756</td>
+              <td class="duration" data-value="756083100">0.756</td>
+              <td class="duration" data-value="756083100">0.756</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>46</td>
+            <td>63</td>
+            <td class="duration">8.409</td>
+            <td class="duration">1:14.310</td>
+            <td class="duration">8:49.820</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

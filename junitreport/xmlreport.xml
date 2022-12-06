@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="8" time="529.83032">
+<testcase classname="To validate the login functionality of BlueLynx" name="To login with invalid username and password" time="119.736054">
+<system-out><![CDATA[Given To launch the chrome browser..........................................passed
+When To launch the url to launch the application............................passed
+And To mouseover action to my account button................................passed
+And To click the myaccount button...........................................passed
+And To pass the invalid username in username textbox........................passed
+And To pass the invalid password in password textbox........................passed
+And To click the signin button..............................................passed
+Then To close the browser...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the login functionality of BlueLynx" name="To pass bulk of datas" time="75.351663">
+<system-out><![CDATA[Given launch the chrome browser.............................................passed
+When To launch the url......................................................passed
+And To mouseover action  my account button..................................passed
+And To click  myaccount button..............................................passed
+And To pass the invalid username "jai22@yahoo.com" username textbox.........passed
+And To pass the invalid password "sql@123" password textbox.................passed
+And To click  signin button.................................................passed
+Then close the browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the login functionality of BlueLynx" name="To pass bulk of datas 2" time="43.437367">
+<system-out><![CDATA[Given launch the chrome browser.............................................passed
+When To launch the url......................................................passed
+And To mouseover action  my account button..................................passed
+And To click  myaccount button..............................................passed
+And To pass the invalid username "raja@hotmail.com" username textbox........passed
+And To pass the invalid password "res@234" password textbox.................passed
+And To click  signin button.................................................passed
+Then close the browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the login functionality of BlueLynx" name="To pass bulk of datas 3" time="73.13714">
+<system-out><![CDATA[Given launch the chrome browser.............................................passed
+When To launch the url......................................................passed
+And To mouseover action  my account button..................................passed
+And To click  myaccount button..............................................passed
+And To pass the invalid username "jpr@gmail.com" username textbox...........passed
+And To pass the invalid password "foodie@1234" password textbox.............passed
+And To click  signin button.................................................passed
+Then close the browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To check the Add To Cart Functionality" name="To add a xioami band product to cart" time="69.502644">
+<system-out><![CDATA[Given To launch the browser.................................................passed
+When To launch url..........................................................passed
+And click category button twice to check the functionality..................passed
+And mouseover to smartphone and smartwatch tab..............................passed
+And mouseover to smartwatch tab and click it................................passed
+And click the first xiaomi product..........................................passed
+Then click Addtocart........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To check the Add To Cart Functionality" name="To add  xioami band product to cart" time="51.089086">
+<system-out><![CDATA[Given launch the browser....................................................passed
+When launch url.............................................................passed
+And click category button twice  check the functionality....................passed
+And mouseover  smartphone and smartwatch tab................................passed
+And mouseover  smartwatch tab and click it..................................passed
+And click  first xiaomi product.............................................passed
+And Addtocart...............................................................passed
+And close the cart..........................................................passed
+Then add to the cart........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To check the images in home Page and click" name="To check whether the images taking to the respective page or not" time="50.640195">
+<system-out><![CDATA[Given launch the browser....................................................passed
+When launc the url..........................................................passed
+And click the first image...................................................passed
+And Take the screenshot of firstimage clicked page..........................passed
+And click the second image..................................................passed
+And Take the screenshot of secondimage clicked page.........................passed
+And click the third image...................................................passed
+And Take the screenshot of thirdimage clicked page..........................passed
+And click the fourth image..................................................passed
+And Take the screenshot of fourthimage clicked page.........................passed
+And click the fifth image...................................................passed
+And Take the screenshot of fifthimage clicked page..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the functionality of search box" name="To check the function of searchbox" time="46.936171">
+<system-out><![CDATA[Given launch google chrome and url..........................................passed
+When In the search box search the products..................................passed
+Then click the search button................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

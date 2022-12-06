@@ -4,6 +4,11 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -14,6 +19,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.checkerframework.checker.builder.qual.ReturnsReceiver;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
@@ -369,6 +375,61 @@ public static WebDriver driver;
 		driver.switchTo().defaultContent();
 
 	}
+	
+	public static Object jdbcConnectionint(String querylang) throws ClassNotFoundException, SQLException {
+		Connection con = null;
+		Object sid = 0;
+		
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		
+		con= DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "hr", "admin@123");
+		
+		String query = querylang;
+		
+		PreparedStatement ps = con.prepareStatement(query);
+		
+		ResultSet ex = ps.executeQuery();
+		
+		while (ex.next()) {
+			
+			sid =ex.getInt("sid");
+			
+		}
+		
+		con.close();
+		
+		return sid;
+	}
+	
+	
+	public static Object jdbcConnectionString(String querylang) throws ClassNotFoundException, SQLException {
+		Connection con = null;
+		
+		 Object sname="";
+		
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		
+		con= DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "hr", "admin@123");
+		
+		String query =querylang ;
+		
+		PreparedStatement ps = con.prepareStatement(query);
+		
+		ResultSet ex = ps.executeQuery();
+		
+		while (ex.next()) {
+			
+			sname =ex.getString("sname");
+			
+		}
+		
+		con.close();
+		
+		return sname;
+	}
+
+
+
 
 
 
